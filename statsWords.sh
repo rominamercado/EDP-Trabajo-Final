@@ -2,7 +2,7 @@
 #1. statsWords.sh Indicador estadístico de longitud de palabras (la más corta, la más larga y el promedio de longitud).
 
 #Imprimimos el texto y lo guardamos en TEXTO
-TEXTO=$(cat $1)
+TEXTO=$(cat ./texto.txt)
 
 #echo $TEXTO
 #Convertimos el texto en una lista de palabras (separador ' ')
