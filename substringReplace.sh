@@ -39,6 +39,5 @@ sed -i 's/'"$VAR"'/'"$REE"'/g' replaced.txt
 echo -e "\n -------------------------------------------------------\n"
 echo -e "\nArchivo reemplazado ($VAR por $REE) -> \n"
 cat ./replaced.txt
-i
 exit 1
 
