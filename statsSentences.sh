@@ -1,6 +1,5 @@
 #! /bin/bash
 
-
 #########################################################################
 #
 # Script statsSentences.sh: calcula los indicadores estadísticos de 
@@ -35,6 +34,7 @@ do
         echo -n $line | wc -m >> longitud.txt
 done < oraciones.txt
 
+
 #Obtenida la longitud de cada oración (archivo longitud), estamos en condiciones de calcular los indicadores
 #Inicializamos las variables
 CONT=0
@@ -47,13 +47,16 @@ do
 	VAL=$(echo -n $line)
 
         #Si es la primera línea, el contador es cero, por ende ingresa en este bloque y almacena en las variables MIN y MAX la longitud oración de la primera línea del archivo longitud, luego actualiza las variables CONT Y SUM
+
         if [[ $CONT -eq 0 ]]
         then
                 MIN=$VAL
                 MAX=$VAL
                 SUM=$((SUM+VAL))
                 CONT=$((CONT+1))
+
 		#Si no es la primera línea, el contador es mayor a 0, por ende ingresa en este bloque y de acuerdo al valor longitud contenido en la línea activa(VAL) y al valor almacenado en MIN/MAX actualiza la variable MIN/MAX, luego los contadores y acumuladores.
+
 	else
                 if [[ $VAL -lt $MIN ]]
                 then
@@ -65,7 +68,9 @@ do
                         SUM=$((SUM+VAL))
                         CONT=$((CONT+1))
                         MAX=$VAL
+
                 #Si el valor de la línea no es ni menor a MIN ni mayor a MAX, solo actualiza las variables SUM y CONT
+
 		else
                         SUM=$((SUM+VAL))
                         CONT=$((CONT+1))
@@ -74,8 +79,10 @@ do
         fi
 
 done < longitud.txt
+
 echo -e "\nA continuación se muestran los indicadores estadísticos de longitud de las oraciones de $1 \n"
 echo "Longitud Máxima:      $MAX caracteres"
 echo "Longitud Mínima:      $MIN caracteres"
 echo "Longitud promedio:    $((SUM/CONT)) caracteres"
+
 
