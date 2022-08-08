@@ -14,19 +14,18 @@
 
 #Le damos la opción de selección al usuario de manera de convertir el texto a minúsculas o mayúsculas
 
-#Guardamos el texto original en la variable: ORIG
-TEXT=$(cat ./texto/$1)
+#Guardamos el texto original en la variable: TEXT
 
-# Invertimos minúsculas o mayúsculas y viceversa el contenido de la variable ORIG, el cual guardamos en CONV.
+TEXT=$(cat ./texto/$1)
+# Invertimos minúsculas o mayúsculas y viceversa el contenido de la variable TEXT, el cual guardamos en CONV.
 CONV="${TEXT~~}"
 
 # Imprimimos el texto actual:
 echo "Texto Original ->"
 echo -e "\n$TEXT"
-echo -e "\n    ------------------------------------------------------------------------------------------    \n"
-
+echo -e "\n   -------------------------------------------------------------------------------------------   \n"
 #Imprimimos el texto convertido:
-echo "Texto convertido: Se invierten las minúsculas a mayúsculas y viceversa ->"
+echo -e "Texto Convertido: Se invierten minúsculas a mayúsculas y viceversa -> \n"
 echo -e "\n$CONV"
 exit 1
 
