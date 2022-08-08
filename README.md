@@ -135,4 +135,7 @@ Permite salir de la aplicación.
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> dd2db763e0be29ede6ca79cfee5b144a0c7670d2
