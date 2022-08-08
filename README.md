@@ -43,16 +43,16 @@ Supongamos que han seleccionado el archivo **file.txt**, luego el menú de opcio
 
 - Archivo seleccionado para su procesamiento: **file.txt** 
  
-  - 0. Obtenga los indicadores estadísticos de longitud de palabras del archivo **file.txt**
-  - 1. Obtenga los indicadores estadísticos de uso de palabras del archivo **file.txt**
-  - 2. Identifique los nombres propios (Nnnn) del archivo **file.txt**
-  - 3. Obtenga los indicadores estadísticos de longitud de oraciones del archivo **file.txt**
-  - 4. Obtenga el número de líneas en blanco del archivo **file.txt**
-  - 5. Convierta a minúsculas o mayúsculas el contenido del archivo **file.txt**
-  - 6. Reemplace subcadenas en el archivo **file.txt**
-  - 7. Seleccione e imprima un párrafo u oración del archivo **file.txt**
-  - 8. Imprima las palabras palíndromos que se encuentran en el archivo **file.txt**
-  - 9. Salir 
+   0. Obtenga los indicadores estadísticos de longitud de palabras del archivo **file.txt**
+   1. Obtenga los indicadores estadísticos de uso de palabras del archivo **file.txt**
+   2. Identifique los nombres propios (Nnnn) del archivo **file.txt**
+   3. Obtenga los indicadores estadísticos de longitud de oraciones del archivo **file.txt**
+   4. Obtenga el número de líneas en blanco del archivo **file.txt**
+   5. Convierta a minúsculas o mayúsculas el contenido del archivo **file.txt**
+   6. Reemplace subcadenas en el archivo **file.txt**
+   7. Seleccione e imprima un párrafo u oración del archivo **file.txt**
+   8. Imprima las palabras palíndromos que se encuentran en el archivo **file.txt**
+   9. Salir 
 
 - Seleccione una opción de 0 a 9:
 
@@ -63,9 +63,9 @@ A modo de ejemplo seleccionaremos la opción 7 - Imprima la primera oración en 
 *Resultado de la terminal:*
  - Opción Seleccionada 7: Seleccione e imprima oraciones o párrafos.
  - Desea imprimir una Oración o un Párrafo
-   - 1. Párrafo
-   - 2. oración
-   - 3. Salir
+   1. Párrafo
+   2. oración
+   3. Salir
  - Elija una opción: 2
  - Ingrese el número de oración que desee imprimir: 1
 
