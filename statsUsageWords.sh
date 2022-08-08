@@ -30,7 +30,7 @@
 
 cat ./texto/$1 | tr -d '.,?¡!¿;'| tr '[:upper:]' '[:lower:]' | tr ' ' '\n' | awk 'length > 3' | sort | uniq -c | sort -r | head -n 10 > resultado.txt
 
-echo "A continuación, se muestra el listado ordenado de manera ascendete de acuerdo al número de ocurrencias de las palabras en el texto"
+echo "A continuación, se muestra el listado ordenado de manera descendete de acuerdo al número de ocurrencias de las palabras en el texto"
 echo " Frecuencia Palabra"
 
 cat resultado.txt
