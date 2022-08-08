@@ -25,7 +25,7 @@ El programa desplegará el listado de archivos de texto disponibles, de manera q
 
 *Resultado de la terminal:*
 
-A continuación posee el listado de archivos de textos disponibles para su procesamiento 
+A continuación posee el listado de archivos de textos disponibles para su procesamiento: 
 -  file.txt
 -  textfile.txt
 Ingrese el nombre y extensión del archivo que desea procesar (ejemplo archivo.txt):
